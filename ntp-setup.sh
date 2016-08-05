@@ -5,7 +5,7 @@ ntpdate ntp2.stratum2.ru
 systemctl enable ntpd.service
 systemctl start ntpd.service
 
-cat > /etc/ntp.conf < "EOF"
+cat > /etc/ntp.conf << "EOF"
 server ntp2.stratum2.ru
 server ntp3.stratum2.ru
 server ntp4.stratum2.ru
